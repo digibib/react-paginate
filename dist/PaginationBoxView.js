@@ -130,14 +130,12 @@ var PaginationBoxView = function (_Component) {
             continue;
           }
 
-          if (breakLabel && items[items.length - 1] !== breakView) {
-            breakView = _react2.default.createElement(_BreakView2.default, {
-              key: _index,
-              breakLabel: breakLabel,
-              breakClassName: breakClassName
-            });
-            items.push(breakView);
-          }
+          breakView = _react2.default.createElement(_BreakView2.default, {
+            key: _index,
+            breakLabel: breakLabel,
+            breakClassName: breakClassName
+          });
+          items.push(breakView);
         }
       }
 

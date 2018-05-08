@@ -193,16 +193,14 @@ export default class PaginationBoxView extends Component {
           continue;
         }
 
-        if (breakLabel && items[items.length - 1] !== breakView) {
-          breakView = (
-            <BreakView
-              key={index}
-              breakLabel={breakLabel}
-              breakClassName={breakClassName}
-            />
-          );
-          items.push(breakView);
-        }
+        breakView = (
+          <BreakView
+            key={index}
+            breakLabel={breakLabel}
+            breakClassName={breakClassName}
+          />
+        );
+        items.push(breakView);
       }
     }
 
